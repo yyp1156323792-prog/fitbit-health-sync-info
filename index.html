@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fitbit Personal Health Sync</title><style>body{font:17px/1.65 system-ui,sans-serif;max-width:820px;margin:48px auto;padding:0 24px;color:#17242d;background:#fbfcfd}h1,h2{line-height:1.25}a{color:#1756a9}code{overflow-wrap:anywhere;font-size:.9em}aside{padding:16px;border-left:4px solid #1756a9;background:#eef4fb}li{margin:.5em 0}footer{margin-top:40px;border-top:1px solid #ccd6dd;padding-top:16px;color:#485762}</style></head>
+<body><main>
+<h1>Fitbit Personal Health Sync</h1>
+<p>A personal tool maintained by <a href="https://github.com/yyp1156323792-prog">yyp1156323792-prog</a> to archive the owner's wearable health data and support personal review.</p>
+<aside>This tool reads health and fitness data from the owner's Google Health account and stores raw responses, daily records, and summaries in the owner's private GitHub repository. GitHub Actions processes the data in the cloud. The owner can also authorize a ChatGPT GitHub connector to read the saved records for personal analysis.</aside>
+<h2>Purpose and access</h2>
+<p>The tool is for the account owner's personal use. It does not accept public registrations or request access to other people's Google accounts. This public website contains application information and its privacy policy; it has no login, health dashboard, or health data.</p>
+<p>The current client reads sleep, resting heart rate, heart rate variability, steps, and daily heart rate aggregates from wearable sources where available. Missing measurements stay missing. Other metrics can require further implementation. Device estimates and summaries are for personal fitness review and are not medical diagnoses.</p>
+<h2>Permissions</h2>
+<p>Google authorization requests three read-only scopes:</p>
+<ul><li><code>googlehealth.activity_and_fitness.readonly</code></li><li><code>googlehealth.health_metrics_and_measurements.readonly</code></li><li><code>googlehealth.sleep.readonly</code></li></ul>
+<p>The full scope identifiers start with <code>https://www.googleapis.com/auth/</code>. The tool does not write or delete measurements in Google Health.</p>
+<h2>Privacy and contact</h2>
+<p>Read the <a href="privacy.html">Privacy Policy</a> for data handling, retention, revocation, and deletion information.</p>
+<p>Maintainer: <a href="https://github.com/yyp1156323792-prog">yyp1156323792-prog</a>. For Google authorization support, use the support address shown on the Google consent screen. Do not post health information or credentials in public issues.</p>
+</main><footer>Application information · Updated 28 October 2026</footer></body></html>
